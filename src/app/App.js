@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from '../components/Home';
 import Navbar from '../components/Navbar';
 import GlobalStyles from '../theme/globalStyles';
 
@@ -7,7 +8,9 @@ function App() {
     <React.Fragment>
       <GlobalStyles />
       <Navbar />
-      <div className="App">Hello World!</div>
+      <div className="App">
+        <Home />
+      </div>
     </React.Fragment>
   );
 }
