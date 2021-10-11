@@ -52,7 +52,6 @@ export const MenuDrop = styled.div`
   height: calc(100vh - 3.875rem);
   min-width: 100%;
   padding: 1.375rem 0;
-  gap: 15rem;
   background-color: ${(props) => props.theme.colors.variant};
   transition: all ease-in-out .4s;
   color: #fff;
@@ -64,9 +63,12 @@ export const MenuDrop = styled.div`
 export const LinkList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: center;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: .3rem;
+  height: 100%;
 `;
 
 export const SocialLinkList = styled.ul`
