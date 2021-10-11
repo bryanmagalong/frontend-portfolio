@@ -40,6 +40,10 @@ export const MenuButton = styled.button`
     background-color: ${(props) => props.theme.colors.variant};
     color: #fff;
   }
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    display: none;
+  }
 `;
 
 export const MenuDrop = styled.div`
@@ -55,13 +59,21 @@ export const MenuDrop = styled.div`
   background-color: ${(props) => props.theme.colors.variant};
   transition: all ease-in-out .4s;
   color: #fff;
+
   &.toggle {
     left: 0px;
+  }
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    display: none;
   }
 `;
 
 export const LinkList = styled.ul`
-  display: flex;
+  ${MenuDrop} > & {
+    display: flex;
+  }
+
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
@@ -69,6 +81,15 @@ export const LinkList = styled.ul`
   text-align: center;
   letter-spacing: .3rem;
   height: 100%;
+
+  @media (min-width: ${(props) => props.theme.media.xs}) {
+    display: none;
+  }
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 export const SocialLinkList = styled.ul`

@@ -33,6 +33,7 @@ const Navbar = () => {
         <MenuButton className={toggleClass} type="button" onClick={handleClick}>
           {toggle ? <XLg size="20" /> : <List size="26" />}
         </MenuButton>
+        <LinkList />
       </NavBar>
       <MenuDrop className={toggleClass}>
         <LinkList />
