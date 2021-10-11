@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-export const StyledNavbar = styled.nav`
+export const NavBar = styled.nav`
   min-width: 100%;
   min-height: 3.875rem;
   padding: 0.750em 1.250rem;
@@ -21,7 +21,7 @@ export const StyledNavbar = styled.nav`
   align-items: center;
 `;
 
-export const StyledNavbarBrand = styled.a`
+export const NavbarBrand = styled.a`
   color: ${(props) => props.theme.colors.variant};
   max-width: 6.563em;
   letter-spacing: .1rem;
@@ -32,7 +32,7 @@ export const StyledNavbarBrand = styled.a`
   }
 `;
 
-export const StyledMenuButton = styled.button`
+export const MenuButton = styled.button`
   background-color: #fff;
   transition: all ease-in-out .4s;
 
@@ -40,4 +40,36 @@ export const StyledMenuButton = styled.button`
     background-color: ${(props) => props.theme.colors.variant};
     color: #fff;
   }
+`;
+
+export const MenuDrop = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  left: -1500px;
+  height: calc(100vh - 3.875rem);
+  min-width: 100%;
+  padding: 1.375rem 0;
+  gap: 15rem;
+  background-color: ${(props) => props.theme.colors.variant};
+  transition: all ease-in-out .4s;
+  color: #fff;
+  &.toggle {
+    left: 0px;
+  }
+`;
+
+export const LinkList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+`;
+
+export const SocialLinkList = styled.ul`
+  display: flex;
+  gap: 1rem;
 `;

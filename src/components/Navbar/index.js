@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { List, XLg } from 'react-bootstrap-icons';
 
-import MenuDrop from './MenuDrop';
 import {
   HeaderContainer,
-  StyledNavbar as NavBar,
-  StyledNavbarBrand as NavbarBrand,
-  StyledMenuButton as MenuButton,
+  NavBar,
+  NavbarBrand,
+  MenuButton,
+  MenuDrop,
 } from './styled';
+import LinkList from './LinkList';
+import SocialLinkList from './SocialLinkList';
 
 const Navbar = () => {
   const [ toggle, setToggle ] = useState(false);
@@ -32,7 +34,10 @@ const Navbar = () => {
           {toggle ? <XLg size="20" /> : <List size="26" />}
         </MenuButton>
       </NavBar>
-      <MenuDrop show={toggleClass} />
+      <MenuDrop className={toggleClass}>
+        <LinkList />
+        <SocialLinkList />
+      </MenuDrop>
     </HeaderContainer>
   );
 };
