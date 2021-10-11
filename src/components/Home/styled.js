@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { ArrowDown } from 'react-bootstrap-icons';
-import { ReactComponent as AppDevSVG } from '../../assets/app_development_SVG.svg';
+import styled from "styled-components";
+import { ArrowDown } from "react-bootstrap-icons";
+import { ReactComponent as AppDevSVG } from "../../assets/app_development_SVG.svg";
 
-import { Title } from '../shared/Title';
+import { Title } from "../shared/Title";
 
 export const AppDevStyled = styled(AppDevSVG)`
   max-width: 12.125em;
@@ -12,13 +12,13 @@ export const AppDevStyled = styled(AppDevSVG)`
 `;
 
 export const LandingTitle = styled(Title)`
-  align-self: ${(props) => (props.right ? 'flex-end' : 'flex-start')};
-  text-align: ${(props) => (props.right ? 'right' : 'left')};
-  color: ${(props) => (props.right ? props.theme.colors.main : '#000')};
+  align-self: ${(props) => (props.right ? "flex-end" : "flex-start")};
+  text-align: ${(props) => (props.right ? "right" : "left")};
+  color: ${(props) => (props.right ? props.theme.colors.main : "#000")};
   text-transform: uppercase;
 `;
 
 export const ArrowDownIcon = styled(ArrowDown)`
   align-self: center;
-  
+  margin-top: auto; /* to push the arrow icon to the bottom */
 `;
