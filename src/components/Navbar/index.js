@@ -1,26 +1,40 @@
-import React from 'react';
-import styled from 'styled-components';
-import MenuButton from './MenuButton';
-import NavbarBrand from './NavbarBrand';
+import React, { useEffect, useState } from 'react';
+import { List, XLg } from 'react-bootstrap-icons';
+
+import MenuDrop from './MenuDrop';
+import {
+  HeaderContainer,
+  StyledNavbar as NavBar,
+  StyledNavbarBrand as NavbarBrand,
+  StyledMenuButton as MenuButton,
+} from './styled';
 
 const Navbar = () => {
+  const [ toggle, setToggle ] = useState(false);
+  const handleClick = (event) => {
+    event.preventDefault();
+    setToggle(!toggle);
+  };
+  const toggleClass = toggle ? 'toggle' : '';
+
+  useEffect(() => {
+    // clean-up function
+    return window.removeEventListener('click', handleClick);
+  });
+
   return (
-    <header>
-      <StyledNavbar>
-        <NavbarBrand>Bryan Magalong</NavbarBrand>
-        <MenuButton />
-      </StyledNavbar>
-    </header>
+    <HeaderContainer className={toggleClass}>
+      <NavBar>
+        <NavbarBrand className={toggleClass} href="#">
+          Bryan Magalong
+        </NavbarBrand>
+        <MenuButton className={toggleClass} type="button" onClick={handleClick}>
+          {toggle ? <XLg size="20" /> : <List size="26" />}
+        </MenuButton>
+      </NavBar>
+      <MenuDrop show={toggleClass} />
+    </HeaderContainer>
   );
 };
-
-const StyledNavbar = styled.nav`
-  min-width: 100%;
-  min-height: 3.875rem;
-  padding: 0.750em 1.250rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
 
 export default Navbar;
