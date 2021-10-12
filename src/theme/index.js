@@ -15,8 +15,8 @@ const theme = {
     h2: "1.625em", // 26px
   },
   padding: {
-    section: "6.813rem 1.875rem", // 109px 30px
-    sectionLg: "6.813rem 5rem",
+    section: "4rem 1.875rem", // 64px 30px
+    sectionLg: "4rem 5rem",
   },
   gap: {
     landing: "1rem",
