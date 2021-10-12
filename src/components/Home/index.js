@@ -1,19 +1,23 @@
 import React from "react";
-import Section from "../shared/Section";
+
 import {
   AppDevStyled as AppDevSVG,
   ArrowDownIcon,
+  LandingSection,
   LandingTitle,
+  TitleWrapper,
 } from "./styled";
 
 const Home = () => {
   return (
-    <Section landing gap="2rem">
+    <LandingSection landing gap="2rem">
       <AppDevSVG />
-      <LandingTitle>bryan magalong</LandingTitle>
-      <LandingTitle right>front web developer</LandingTitle>
+      <TitleWrapper>
+        <LandingTitle>bryan magalong</LandingTitle>
+        <LandingTitle right>front web developer</LandingTitle>
+      </TitleWrapper>
       <ArrowDownIcon size="30" />
-    </Section>
+    </LandingSection>
   );
 };
 
