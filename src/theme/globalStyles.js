@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     line-height: 1;
-  
+    font-size: 16px;
     @media (min-width: 1024px) {
       overflow-y: scroll;
       overscroll-behavior-y: contain;
