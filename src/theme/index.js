@@ -1,7 +1,9 @@
 const theme = {
   colors: {
-    main: "#4D1CAB",
-    variant: "#8C50FF",
+    main: "#8C50FF",
+    variant: "#4D1CAB",
+    vibrant: "#BD48EE",
+    orange: "#FB5110",
   },
   media: {
     xs: "320px",
