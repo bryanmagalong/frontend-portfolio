@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   transition: all ease-in-out 0.4s;
 
   &.toggle {
-    background-color: ${(props) => props.theme.colors.variant};
+    background-color: ${(props) => props.theme.colors.main};
   }
 `;
 
@@ -22,7 +22,7 @@ export const NavBar = styled.nav`
 `;
 
 export const NavbarBrand = styled.a`
-  color: ${(props) => props.theme.colors.variant};
+  color: ${(props) => props.theme.colors.main};
   max-width: 6.563em;
   letter-spacing: 0.1rem;
   transition: all ease-in-out 0.4s;
@@ -37,7 +37,7 @@ export const MenuButton = styled.button`
   transition: all ease-in-out 0.4s;
 
   &.toggle {
-    background-color: ${(props) => props.theme.colors.variant};
+    background-color: ${(props) => props.theme.colors.main};
     color: #fff;
   }
 
@@ -56,7 +56,7 @@ export const MenuDrop = styled.div`
   height: calc(100vh - 3.875rem);
   min-width: 100%;
   padding: 1.375rem 0;
-  background-color: ${(props) => props.theme.colors.variant};
+  background-color: ${(props) => props.theme.colors.main};
   transition: all ease-in-out 0.4s;
   color: #fff;
 

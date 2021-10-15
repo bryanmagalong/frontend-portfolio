@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Title } from "./Title";
 
-export const Section = ({ gap, landing, title, children }) => {
+export const Section = ({ titleColor, gap, landing, title, children }) => {
   return (
     <StyledSection landing={landing} gap={gap}>
-      {title && <Title>{title}</Title>}
+      {title && <Title titleColor={titleColor}>{title}</Title>}
       {children}
     </StyledSection>
   );
