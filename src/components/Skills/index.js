@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { fetchSkills } from "../../features/skills/skillActions";
 import { Section } from "../shared/Section";
@@ -7,16 +8,25 @@ import { SkillListCard, SkillListTitle } from "./styled";
 
 const Skills = () => {
   const dispatch = useDispatch();
+  const { frontend, backend, tools } = useSelector((state) => state.skills);
 
   useEffect(() => {
     dispatch(fetchSkills());
   }, [dispatch]);
 
   return (
-    <Section title="Skills">
+    <Section title="Skills" gap="2.5rem">
       <SkillListCard>
         <SkillListTitle>Front-end</SkillListTitle>
-        <SkillsList />
+        <SkillsList list={frontend} />
+      </SkillListCard>
+      <SkillListCard>
+        <SkillListTitle>Back-end</SkillListTitle>
+        <SkillsList list={backend} />
+      </SkillListCard>
+      <SkillListCard>
+        <SkillListTitle>Tools</SkillListTitle>
+        <SkillsList list={tools} />
       </SkillListCard>
     </Section>
   );
