@@ -6,6 +6,7 @@ export const HeaderContainer = styled.header`
   position: sticky;
   background-color: #fff;
   transition: all ease-in-out 0.4s;
+  z-index: 9999;
 
   &.toggle {
     background-color: ${(props) => props.theme.colors.main};
