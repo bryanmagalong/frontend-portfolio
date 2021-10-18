@@ -1,3 +1,4 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
+import skills from "../features/skills/skillReducer";
 
-export default combineReducers({});
+export default combineReducers({ skills });
