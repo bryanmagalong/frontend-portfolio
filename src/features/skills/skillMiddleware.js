@@ -6,7 +6,6 @@ const skillMiddleware = (store) => (next) => async (action) => {
     case FETCH_SKILLS:
       try {
         const data = await get(`${process.env.REACT_APP_API_URL}/skills`);
-        console.log(data);
 
         store.dispatch(fetchSkillsSuccess(data.skills));
       } catch (error) {
