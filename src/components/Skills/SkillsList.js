@@ -1,17 +1,13 @@
 import React from "react";
+import SkillItem from "./SkillItem";
 import { SkillsList as List } from "./styled";
 
-const SkillsList = () => {
+const SkillsList = ({ list }) => {
   return (
     <List>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
+      {list.map((skill) => (
+        <SkillItem key={skill.name} {...skill} />
+      ))}
     </List>
   );
 };
