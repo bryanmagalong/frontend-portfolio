@@ -7,8 +7,14 @@ export const SkillListCard = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
   gap: 2rem;
   min-height: 22.5rem;
+  width: 100%;
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    width: 50%;
+  }
 `;
 
 export const SkillListTitle = styled.h2`
@@ -20,7 +26,13 @@ export const SkillsList = styled.ul`
   display: grid;
   min-width: 100%;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+  }
 `;
 
 export const SkillItem = styled.li`
@@ -31,8 +43,13 @@ export const SkillItem = styled.li`
 `;
 
 export const SkillLogo = styled.div`
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
+
+  @media (min-width: ${(props) => props.theme.media.sm}) {
+    width: 6rem;
+    height: 6rem;
+  }
 
   & > img {
     width: 100%;
