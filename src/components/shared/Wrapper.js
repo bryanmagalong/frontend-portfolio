@@ -5,4 +5,5 @@ export const Wrapper = styled.div`
   padding: ${(props) => props.padding || "0rem"};
   display: ${(props) => (props.flex ? "flex" : "block")};
   flex-direction: ${(props) => (props.column ? "column" : "row")};
+  gap: ${(props) => props.gap || "0rem"};
 `;
