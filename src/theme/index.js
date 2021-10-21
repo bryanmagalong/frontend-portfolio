@@ -13,8 +13,9 @@ const theme = {
     xl: "1224px",
   },
   fontSize: {
-    h1: "2.250rem", // 36px
+    h1: "2.250em", // 36px
     h2: "1.625em", // 26px
+    h3: "1.45em",
   },
   padding: {
     section: "4rem 1.875rem", // 64px 30px
@@ -23,6 +24,7 @@ const theme = {
   gap: {
     landing: "1rem",
   },
+  borderRadius: "5px",
 };
 
 export default theme;
