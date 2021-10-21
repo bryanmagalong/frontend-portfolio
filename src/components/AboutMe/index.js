@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <Wrapper>
       <WaveDividerTop />
-      <Section title="About me" titleColor="white" gap="2.5rem">
+      <Section title="About me" titleColor="white">
         <AboutMeCard padding="2rem 1.5rem" flex column>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

@@ -15,7 +15,7 @@ const Skills = () => {
   }, [dispatch]);
 
   return (
-    <Section title="Skills" gap="2.5rem">
+    <Section title="Skills">
       <SkillListCard>
         <SkillListTitle>Front-end</SkillListTitle>
         <SkillsList list={frontend} />
