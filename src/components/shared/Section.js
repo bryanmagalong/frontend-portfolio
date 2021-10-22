@@ -19,4 +19,7 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: ${(props) => props.gap || "2.5rem"};
+  @media (min-width: ${(props) => props.theme.media.xl}) {
+    padding: ${(props) => props.theme.padding.sectionLg};
+  }
 `;
