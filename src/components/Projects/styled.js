@@ -5,6 +5,12 @@ export const ProjectItem = styled.article`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 2rem;
+  }
 `;
 
 export const ProjectCoverImage = styled.img`
@@ -20,6 +26,10 @@ export const ProjectCover = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 5px;
+  }
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    height: 100%;
   }
 `;
 
@@ -43,7 +53,7 @@ export const ProjectLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6rem;
+  width: 7rem;
   height: 2.5rem;
   color: #fff;
   background: linear-gradient(
@@ -53,4 +63,5 @@ export const ProjectLink = styled.a`
   );
   border-radius: 4rem;
   padding: 0.25rem;
+  letter-spacing: 0.1rem;
 `;
