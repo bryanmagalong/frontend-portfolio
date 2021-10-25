@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { ProjectLink as Link } from "./styled";
 
@@ -10,6 +11,11 @@ const ProjectLink = ({ type, url }) => {
       </Link>
     </li>
   );
+};
+
+ProjectLink.propTypes = {
+  type: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default ProjectLink;

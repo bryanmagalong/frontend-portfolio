@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import { Wrapper } from "../shared/Wrapper";
 import ProjectCover from "./ProjectCover";
 import ProjectLink from "./ProjectLink";
@@ -23,6 +25,14 @@ const ProjectItem = ({ name, description, imageCover, github, website }) => {
       </Wrapper>
     </Project>
   );
+};
+
+ProjectItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  imageCover: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired,
 };
 
 export default ProjectItem;

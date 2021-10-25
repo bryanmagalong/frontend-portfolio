@@ -1,5 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import { SkillItem as Skill, SkillLogo, SkillName } from "./styled";
+
 const SkillItem = ({ name, logo }) => {
   return (
     <Skill>
@@ -9,6 +12,11 @@ const SkillItem = ({ name, logo }) => {
       <SkillName>{name}</SkillName>
     </Skill>
   );
+};
+
+SkillItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
 };
 
 export default SkillItem;
