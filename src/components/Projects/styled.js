@@ -37,6 +37,11 @@ export const ProjectName = styled.h3`
   font-size: ${(props) => props.theme.fontSize.h3};
   font-weight: bold;
   letter-spacing: 0.2rem;
+  text-transform: capitalize;
+
+  @media (min-width: ${(props) => props.theme.media.xl}) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const ProjectDescription = styled.p`
