@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import SkillItem from "./SkillItem";
 import { SkillsList as List } from "./styled";
 
@@ -10,6 +12,10 @@ const SkillsList = ({ list }) => {
       ))}
     </List>
   );
+};
+
+SkillsList.propTypes = {
+  list: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default SkillsList;

@@ -18,5 +18,8 @@ export const StyledSection = styled.section`
     props.landing ? "calc(100vh - 3.875rem)" : "100vh"};
   display: flex;
   flex-direction: column;
-  gap: ${(props) => props.gap || "1rem"};
+  gap: ${(props) => props.gap || "2.5rem"};
+  @media (min-width: ${(props) => props.theme.media.xl}) {
+    padding: ${(props) => props.theme.padding.sectionLg};
+  }
 `;

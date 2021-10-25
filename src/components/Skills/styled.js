@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkillListCard = styled.article`
   padding: 2rem 1.5rem;
-  border-radius: 5px;
+  border-radius: ${(props) => props.theme.borderRadius};
   box-shadow: 0 0 10px grey;
   display: flex;
   flex-direction: column;
