@@ -1,13 +1,10 @@
 import React from "react";
 import { ProjectCover as Cover, ProjectCoverImage } from "./styled";
 
-const ProjectCover = () => {
+const ProjectCover = ({ url, name }) => {
   return (
     <Cover>
-      <ProjectCoverImage
-        src="https://res.cloudinary.com/dizkjylrp/image/upload/v1634816216/portfolio/projects/chat-app-landing_vnqmkd.png"
-        alt="random cover"
-      />
+      <ProjectCoverImage src={url} alt={`${name} cover`} />
     </Cover>
   );
 };

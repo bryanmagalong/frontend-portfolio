@@ -9,27 +9,16 @@ import {
   ProjectLinkList,
 } from "./styled";
 
-const ProjectItem = () => {
+const ProjectItem = ({ name, description, imageCover, github, website }) => {
   return (
     <Project>
-      <ProjectCover />
-      <Wrapper flex column gap="0.5rem">
-        <ProjectName>Project name</ProjectName>
-        <ProjectDescription>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
-          dictum libero, non elementum nibh. Vestibulum tincidunt bibendum
-          mauris. Phasellus dictum arcu in leo mattis, eu varius nibh molestie.
-          Sed ut lacus ac nunc sollicitudin tempor. Aenean convallis ante quis
-          sem ullamcorper, ut fringilla lectus posuere. Fusce efficitur
-          ullamcorper tellus. Ut a leo sapien. In hac habitasse platea dictumst.
-          Duis interdum hendrerit magna, ut aliquam elit luctus non. Mauris id
-          condimentum lorem, vel mollis mi. Class aptent taciti sociosqu ad
-          litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum
-          id libero non turpis eleifend luctus.
-        </ProjectDescription>
+      <ProjectCover url={imageCover} name={name} />
+      <Wrapper flex column gap="1rem">
+        <ProjectName>{name}</ProjectName>
+        <ProjectDescription>{description}</ProjectDescription>
         <ProjectLinkList>
-          <ProjectLink type="website" />
-          <ProjectLink type="github" />
+          {website && <ProjectLink type="website" url={website} />}
+          <ProjectLink type="github" url={github} />
         </ProjectLinkList>
       </Wrapper>
     </Project>

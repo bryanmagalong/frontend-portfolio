@@ -9,7 +9,7 @@ const projectReducer = (state = initialState, action = {}) => {
     case FETCH_PROJECTS_SUCCESS:
       return {
         ...state,
-        list: [...action.payload],
+        list: [...action.payload.reverse()],
       };
     default:
       return state;
