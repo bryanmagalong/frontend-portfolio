@@ -92,8 +92,3 @@ export const LinkList = styled.ul`
     flex-direction: row;
   }
 `;
-
-export const SocialLinkList = styled.ul`
-  display: flex;
-  gap: 1rem;
-`;
