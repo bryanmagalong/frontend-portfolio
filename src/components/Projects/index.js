@@ -18,9 +18,11 @@ const Projects = () => {
     <Wrapper>
       <WaveDividerTop />
       <Section title="Projects" titleColor="#FFF">
-        {projects.map((project) => (
-          <ProjectItem key={project.name} {...project} />
-        ))}
+        <Wrapper gap="5rem" flex column>
+          {projects.map((project) => (
+            <ProjectItem key={project.name} {...project} />
+          ))}
+        </Wrapper>
       </Section>
     </Wrapper>
   );
