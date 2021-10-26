@@ -19,7 +19,7 @@ export const AboutMeCard = styled(Wrapper)`
   }
 
   @media (min-width: ${(props) => props.theme.media.lg}) {
-    max-width: 35%;
+    max-width: 40%;
     font-size: 1.1rem;
   }
 `;
