@@ -15,7 +15,7 @@ const Projects = () => {
   }, [dispatch]);
 
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <WaveDividerTop />
       <Section title="Projects" titleColor="#FFF">
         <Wrapper gap="5rem" flex column>
