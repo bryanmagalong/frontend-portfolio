@@ -13,18 +13,18 @@ const theme = {
     xl: "1224px",
   },
   fontSize: {
-    h1: "2.250em", // 36px
-    h2: "1.625em", // 26px
-    h3: "1.45em",
+    h1: "2.8em", // 44px
+    h2: "2em", // 32px
+    h3: "1.65em", // 26px
   },
   padding: {
     section: "4rem 1.875rem", // 64px 30px
-    sectionLg: "4rem 5rem",
+    sectionLg: "4rem 5rem", // 64px 80px
   },
   gap: {
     landing: "1rem",
   },
-  borderRadius: "5px",
+  borderRadius: "0px",
 };
 
 export default theme;

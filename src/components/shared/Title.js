@@ -6,4 +6,5 @@ export const Title = styled.h1`
   font-weight: bold;
   letter-spacing: 0.1rem;
   align-self: center;
+  text-transform: uppercase;
 `;

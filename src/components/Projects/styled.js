@@ -25,7 +25,6 @@ export const ProjectCover = styled.div`
   ${ProjectCoverImage} {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
   }
 
   @media (min-width: ${(props) => props.theme.media.lg}) {
@@ -34,13 +33,13 @@ export const ProjectCover = styled.div`
 `;
 
 export const ProjectName = styled.h3`
-  font-size: ${(props) => props.theme.fontSize.h3};
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
   text-transform: capitalize;
 
   @media (min-width: ${(props) => props.theme.media.xl}) {
-    font-size: 1.6rem;
+    font-size: ${(props) => props.theme.fontSize.h2};
   }
 `;
 
@@ -50,23 +49,15 @@ export const ProjectDescription = styled.p`
 
 export const ProjectLinkList = styled.ul`
   display: flex;
-  gap: 2rem;
-  padding: 1rem 0;
+  gap: 2.5rem;
+  justify-content: flex-end;
 `;
 
 export const ProjectLink = styled.a`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 7rem;
-  height: 2.5rem;
   color: #fff;
-  background: linear-gradient(
-    135deg,
-    ${(props) => props.theme.colors.vibrant},
-    ${(props) => props.theme.colors.orange}
-  );
-  border-radius: 4rem;
-  padding: 0.25rem;
-  letter-spacing: 0.1rem;
+  transition: color ease-in-out 0.2s;
+  &:hover {
+    color: ${(props) => props.theme.colors.orange};
+  }
 `;

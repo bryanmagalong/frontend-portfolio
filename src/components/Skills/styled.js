@@ -46,11 +46,6 @@ export const SkillLogo = styled.div`
   width: 4rem;
   height: 4rem;
 
-  @media (min-width: ${(props) => props.theme.media.sm}) {
-    width: 6rem;
-    height: 6rem;
-  }
-
   & > img {
     width: 100%;
     height: 100%;
