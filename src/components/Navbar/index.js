@@ -36,7 +36,7 @@ const Navbar = () => {
         <LinkList />
       </NavBar>
       <MenuDrop className={toggleClass}>
-        <LinkList />
+        <LinkList onClickLink={setToggle} />
         <SocialLinkList />
       </MenuDrop>
     </HeaderContainer>

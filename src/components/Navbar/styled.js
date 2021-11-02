@@ -1,3 +1,4 @@
+import { NavHashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
 //=============== Styled-components
@@ -90,5 +91,21 @@ export const LinkList = styled.ul`
   @media (min-width: ${(props) => props.theme.media.lg}) {
     display: flex;
     flex-direction: row;
+  }
+`;
+
+export const Link = styled(NavHashLink)`
+  color: #fff;
+  padding: 0.5rem;
+  border: 4px ${(props) => props.theme.colors.main} solid;
+
+  &:hover,
+  &.selected {
+    border: 4px ${(props) => props.theme.colors.orange} solid;
+  }
+
+  @media (min-width: ${(props) => props.theme.media.lg}) {
+    color: #000;
+    border: 4px #fff solid;
   }
 `;
