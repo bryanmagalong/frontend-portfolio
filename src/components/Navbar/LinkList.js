@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect } from "react";
+import ResumeButton from "./ResumeButton";
 
 import { LinkList as StyledList, Link } from "./styled";
 
@@ -16,41 +17,28 @@ const LinkList = ({ onClickLink }) => {
   return (
     <StyledList>
       <li>
-        <Link smooth to="/#" onClick={handleClick} activeClassName="selected">
+        <Link to="/#" onClick={handleClick} activeClassName="selected">
           home
         </Link>
       </li>
       <li>
-        <Link
-          smooth
-          to="/#about_me"
-          onClick={handleClick}
-          activeClassName="selected"
-        >
+        <Link to="/#about_me" onClick={handleClick} activeClassName="selected">
           about me
         </Link>
       </li>
       <li>
-        <Link
-          smooth
-          to="/#skills"
-          onClick={handleClick}
-          activeClassName="selected"
-        >
+        <Link to="/#skills" onClick={handleClick} activeClassName="selected">
           skills
         </Link>
       </li>
       <li>
-        <Link
-          smooth
-          to="/#projects"
-          onClick={handleClick}
-          activeClassName="selected"
-        >
+        <Link to="/#projects" onClick={handleClick} activeClassName="selected">
           projects
         </Link>
       </li>
-      <li>resume</li>
+      <li>
+        <ResumeButton />
+      </li>
     </StyledList>
   );
 };
