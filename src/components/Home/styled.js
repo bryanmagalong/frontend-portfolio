@@ -9,15 +9,11 @@ export const LandingSection = styled(StyledSection)`
   @media (min-width: ${(props) => props.theme.media.md}) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "titles appdevsvg"
-      "arrow arrow";
-    padding: 6.813rem 2rem 2rem 2rem;
+    padding: 2rem;
   }
 
   @media (min-width: ${(props) => props.theme.media.lg}) {
-    padding: 6.813rem 5rem 2rem 5rem;
+    padding: 2rem 5rem 2rem 5rem;
   }
 `;
 
@@ -32,7 +28,6 @@ export const AppDevStyled = styled(AppDevSVG)`
     max-width: 20rem;
     max-height: 20rem;
     order: 3;
-    grid-area: appdevsvg;
   }
 
   @media (min-width: ${(props) => props.theme.media.lg}) {
@@ -48,7 +43,6 @@ export const TitleWrapper = styled.div`
 
   @media (min-width: ${(props) => props.theme.media.md}) {
     align-self: center;
-    grid-area: titles;
   }
 `;
 

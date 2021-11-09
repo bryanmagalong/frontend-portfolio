@@ -2,7 +2,6 @@ import React from "react";
 
 import {
   AppDevStyled as AppDevSVG,
-  ArrowDownIcon,
   LandingSection,
   LandingTitle,
   TitleWrapper,
@@ -16,7 +15,6 @@ const Home = () => {
         <LandingTitle>bryan magalong</LandingTitle>
         <LandingTitle right>front web developer</LandingTitle>
       </TitleWrapper>
-      <ArrowDownIcon size="30" />
     </LandingSection>
   );
 };

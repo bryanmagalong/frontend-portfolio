@@ -8,7 +8,7 @@ import { AboutMeCard } from "./styled";
 
 const AboutMe = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about_me">
       <WaveDividerTop />
       <Section title="About me" titleColor="white">
         <AboutMeCard padding="2rem 1.5rem" flex column>
