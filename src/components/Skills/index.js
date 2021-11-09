@@ -18,18 +18,20 @@ const Skills = () => {
   return (
     <Wrapper id="skills" bgColor="#FFF">
       <Section title="Skills">
-        <SkillListCard>
-          <SkillListTitle>Front-end</SkillListTitle>
-          <SkillsList list={frontend} />
-        </SkillListCard>
-        <SkillListCard>
-          <SkillListTitle>Back-end</SkillListTitle>
-          <SkillsList list={backend} />
-        </SkillListCard>
-        <SkillListCard>
-          <SkillListTitle>Tools</SkillListTitle>
-          <SkillsList list={tools} />
-        </SkillListCard>
+        <Wrapper bgColor="#FFF" gap="5rem" flex column>
+          <SkillListCard>
+            <SkillListTitle>Front-end</SkillListTitle>
+            <SkillsList list={frontend} />
+          </SkillListCard>
+          <SkillListCard>
+            <SkillListTitle>Back-end</SkillListTitle>
+            <SkillsList list={backend} />
+          </SkillListCard>
+          <SkillListCard>
+            <SkillListTitle>Tools</SkillListTitle>
+            <SkillsList list={tools} />
+          </SkillListCard>
+        </Wrapper>
       </Section>
     </Wrapper>
   );
