@@ -13,26 +13,26 @@ const AboutMe = () => {
       <Section title="About me" titleColor="white">
         <AboutMeCard padding="2rem 1.5rem" flex column>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            lobortis tempor nulla, et imperdiet nibh mollis quis. Mauris
-            tincidunt, nulla a rutrum accumsan, diam nulla tempor diam, nec
-            euismod lacus felis in massa. Nullam sed purus congue sapien gravida
-            hendrerit sit amet non elit. Sed venenatis, tellus vitae consectetur
-            pretium, odio diam imperdiet elit, eu dapibus lacus mauris vitae
-            ligula. Cras interdum tellus eu pulvinar fermentum.
+            Hello world &#128075;! I'm Bryan and I'm web developer junior
+            located in France. I'm mainly focused on building websites on the
+            front-end using ReactJS.
           </p>
           <p>
-            Proin venenatis convallis ligula sit amet dapibus. In non est
-            finibus leo sollicitudin interdum. Fusce vitae mauris quis libero
-            rutrum eleifend. Maecenas et massa non mauris consequat laoreet.
-            Integer non nisl at dui venenatis finibus accumsan ac nisl.
+            At first, I wanted to be a programmer in the video game industry and
+            went to a computer science university. As the years go by, I gained
+            more interest in web development through one of the teaching modules
+            but didn't planned to be a web developer at the time.
           </p>
           <p>
-            Phasellus sit amet sapien ut dolor pellentesque convallis. Praesent
-            pellentesque, nulla ac rhoncus dapibus, urna metus vehicula risus, a
-            laoreet mauris nibh id lorem. Praesent congue mi a blandit aliquet.
-            Vestibulum vehicula viverra elit, at rutrum nunc laoreet quis.
-            Vivamus at mauris ut libero sagittis varius.
+            After graduating, i went in a different direction by working in the
+            audiovisual industry. But I decided to get back to programming and
+            took part in a web development training course at O'Clock school. In
+            few months, i was able to build functional websites and become a
+            fully fledge web developer.
+          </p>
+          <p>
+            Programming aside, I enjoy playing guitar, read books and playing
+            video games.
           </p>
         </AboutMeCard>
       </Section>
