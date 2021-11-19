@@ -6,7 +6,6 @@ const projectMiddleware = (store) => (next) => async (action) => {
     case FETCH_PROJECTS:
       try {
         const data = await get(`${process.env.REACT_APP_API_URL}/projects`);
-        console.log(data);
         store.dispatch(fetchProjectsSuccess(data.projects));
       } catch (error) {
         if (process.env.NODE_ENV === "development") console.log(error);
