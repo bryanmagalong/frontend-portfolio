@@ -1,9 +1,10 @@
-import { FETCH_SKILLS_SUCCESS } from "./skillActions";
+import { FETCH_SKILLS_SUCCESS, TOGGLE_LOADING_SKILLS } from "./skillActions";
 
 const initialState = {
   frontend: [],
   backend: [],
   tools: [],
+  loading: false,
 };
 
 const skillReducer = (state = initialState, action = {}) => {
@@ -20,6 +21,12 @@ const skillReducer = (state = initialState, action = {}) => {
         tools: [
           ...action.payload.filter((skill) => skill.category === "tools"),
         ],
+        loading: false,
+      };
+    case TOGGLE_LOADING_SKILLS:
+      return {
+        ...state,
+        loading: true,
       };
     default:
       return state;
