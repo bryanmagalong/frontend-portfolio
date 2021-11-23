@@ -19,7 +19,7 @@ const projectReducer = (state = initialState, action = {}) => {
     case TOGGLE_LOADING_PROJECTS:
       return {
         ...state,
-        loading: action.payload,
+        loading: true,
       };
     default:
       return state;
