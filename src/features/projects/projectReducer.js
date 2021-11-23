@@ -1,4 +1,7 @@
-import { FETCH_PROJECTS_SUCCESS, TOGGLE_LOADING } from "./projectActions";
+import {
+  FETCH_PROJECTS_SUCCESS,
+  TOGGLE_LOADING_PROJECTS,
+} from "./projectActions";
 
 const initialState = {
   list: [],
@@ -13,7 +16,7 @@ const projectReducer = (state = initialState, action = {}) => {
         list: [...action.payload.reverse()],
         loading: false,
       };
-    case TOGGLE_LOADING:
+    case TOGGLE_LOADING_PROJECTS:
       return {
         ...state,
         loading: action.payload,
